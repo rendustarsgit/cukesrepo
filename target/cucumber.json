@@ -1,0 +1,504 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-06-19T20:33:23.025Z",
+        "before": [
+          {
+            "result": {
+              "duration": 802374,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeValidation()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Home page second login",
+        "description": "",
+        "id": "application-login;home-page-second-login",
+        "after": [
+          {
+            "result": {
+              "duration": 31185,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterValidation()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 126885,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on NetBanking landing page",
+            "match": {
+              "location": "StepDefinitions.user_is_on_NetBanking_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 157628,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User login to application with \"siva\" and \"andhaadhi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "siva",
+                  "offset": 32
+                },
+                {
+                  "val": "andhaadhi",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefinitions.user_login_to_application_with_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42283,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Home page is populated",
+            "match": {
+              "location": "StepDefinitions.home_page_is_populated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34404,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Cards are displayed \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "false",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.cards_are_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-06-19T20:33:23.030Z",
+        "before": [
+          {
+            "result": {
+              "duration": 70845,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSanityValidation()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User sign-up",
+        "description": "",
+        "id": "application-login;user-sign-up",
+        "after": [
+          {
+            "result": {
+              "duration": 24548,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSanityValidation()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 44896,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is on NetBanking landing page",
+            "match": {
+              "location": "StepDefinitions.user_is_on_NetBanking_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 965918,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User signs up with the following values",
+            "match": {
+              "location": "StepDefinitions.user_signs_up_with_the_following_values(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ganesh1",
+                  "07777777771",
+                  "ub67rb1"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33639,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "sign-up is successful",
+            "match": {
+              "location": "StepDefinitions.sign_up_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-06-19T20:33:23.032Z",
+        "before": [
+          {
+            "result": {
+              "duration": 67385,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSanityValidation()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "User login",
+        "description": "",
+        "id": "application-login;user-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 31939,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSanityValidation()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 67627,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User is on NetBanking landing page",
+            "match": {
+              "location": "StepDefinitions.user_is_on_NetBanking_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 189870,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User log in to application with \"ganeshOne\" and \"07777777771\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ganeshOne\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"07777777771\"",
+                  "offset": 48
+                }
+              ],
+              "location": "StepDefinitions.user_log_in_to_application(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50047,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Home page is populated",
+            "match": {
+              "location": "StepDefinitions.home_page_is_populated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48513,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Cards are displayed \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "false",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.cards_are_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-06-19T20:33:23.033Z",
+        "before": [
+          {
+            "result": {
+              "duration": 55099,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSanityValidation()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "User login",
+        "description": "",
+        "id": "application-login;user-login;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 30642,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSanityValidation()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 49794,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User is on NetBanking landing page",
+            "match": {
+              "location": "StepDefinitions.user_is_on_NetBanking_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113227,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User log in to application with \"ganeshTwo\" and \"07777777772\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ganeshTwo\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"07777777772\"",
+                  "offset": 48
+                }
+              ],
+              "location": "StepDefinitions.user_log_in_to_application(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41439,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Home page is populated",
+            "match": {
+              "location": "StepDefinitions.home_page_is_populated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59368,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Cards are displayed \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "false",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.cards_are_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-06-19T20:33:23.034Z",
+        "before": [
+          {
+            "result": {
+              "duration": 51417,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSanityValidation()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "User login",
+        "description": "",
+        "id": "application-login;user-login;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 32446,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSanityValidation()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 46197,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User is on NetBanking landing page",
+            "match": {
+              "location": "StepDefinitions.user_is_on_NetBanking_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 119205,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User log in to application with \"ganeshThree\" and \"07777777773\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ganeshThree\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"07777777773\"",
+                  "offset": 50
+                }
+              ],
+              "location": "StepDefinitions.user_log_in_to_application(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33838,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Home page is populated",
+            "match": {
+              "location": "StepDefinitions.home_page_is_populated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 52494,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Cards are displayed \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "false",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.cards_are_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Application Login",
+    "description": "",
+    "id": "application-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]

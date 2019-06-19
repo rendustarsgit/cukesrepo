@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="0.005833">
+<testcase classname="Application Login" name="Home page second login" time="0.002791">
+<system-out><![CDATA[Given User is on NetBanking landing page....................................passed
+When User login to application with "siva" and "andhaadhi"..................passed
+Then Home page is populated.................................................passed
+And Cards are displayed "false".............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application Login" name="User sign-up" time="0.001309">
+<system-out><![CDATA[Given User is on NetBanking landing page....................................passed
+When User signs up with the following values................................passed
+Then sign-up is successful..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application Login" name="User login" time="0.000664">
+<system-out><![CDATA[Given User is on NetBanking landing page....................................passed
+When User log in to application with "ganeshOne" and "07777777771"..........passed
+Then Home page is populated.................................................passed
+And Cards are displayed "false".............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application Login" name="User login 2" time="0.000548">
+<system-out><![CDATA[Given User is on NetBanking landing page....................................passed
+When User log in to application with "ganeshTwo" and "07777777772"..........passed
+Then Home page is populated.................................................passed
+And Cards are displayed "false".............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application Login" name="User login 3" time="0.000521">
+<system-out><![CDATA[Given User is on NetBanking landing page....................................passed
+When User log in to application with "ganeshThree" and "07777777773"........passed
+Then Home page is populated.................................................passed
+And Cards are displayed "false".............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
